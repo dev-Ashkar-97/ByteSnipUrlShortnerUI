@@ -92,8 +92,8 @@ async function shortenUrl() {
 
   try {
     const response = await fetch(
-      'https://localhost:7076/Api/Url/Shorten',
-      //'https://bytesnipapi.azurewebsites.net/api/Url/Shorten',
+      //'https://localhost:7076/Api/Url/Shorten',
+      'https://bytesnipapi.azurewebsites.net/api/Url/Shorten',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -142,8 +142,8 @@ async function sendMessage(event) {
 
   try {
     const response = await fetch(
-      //'https://bytesnipapi.azurewebsites.net/api/EnquiryMessage/PostRequestMessage',
-      'https://localhost:7076/Api/EnquiryMessage/PostRequestMessage',
+      'https://bytesnipapi.azurewebsites.net/api/EnquiryMessage/PostRequestMessage',
+      //'https://localhost:7076/Api/EnquiryMessage/PostRequestMessage',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
